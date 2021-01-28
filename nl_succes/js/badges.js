@@ -22,37 +22,9 @@ export class Badge{
         else  return this.url()
     }
 
-    // get src (){
-    //     if(window.devicePixelRatio > 1.5){
-    //        return '2@x' + this.url 
-    //     }
-    //     return url
-    // }
+  
 }
 
-
-// function buildRealBages(num, list){
-//     let arr = [];
-//     for(let i = 0; i <= num; i++){
-//         if(i % 2 != 0 && i % 3 != 0){
-//             arr.push(new Badge('Белые зубы', false));
-//         }
-//         else if(i % 3 == 0 && i % 2 != 0){
-//             arr.push(new Badge('Клиентик', false));
-//         }
-//         else {
-//             arr.push(new Badge('Smart', false));
-//         }
-//     }
-
-
-//     arr.map((elem) => {
-//         list.innerHTML += `<li class='badgesCard badges__list-item'>
-//             <img src=../img/${elem.srcRat} alt=${elem.title}>
-//             <p class='badgesTitle'>${elem.title}</p>
-//             </li>`
-//     })
-// }
 
 
 function buildRealBages(num, list){
@@ -72,7 +44,7 @@ function buildRealBages(num, list){
     
         arr.map((elem) => {
             list.innerHTML += `<li class='badgesCard badges__list-item'>
-                <img src=../img/${elem.srcRat} alt=${elem.title}>
+                <img src=./img/${elem.srcRat} alt=${elem.title}>
                 <p class='badgesTitle'>${elem.title}</p>
                 </li>`
         })
